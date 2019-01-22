@@ -40,11 +40,21 @@ export class LoginComponent implements OnInit {
     // this.passwordControl.setValue('1234');
   }
 
+  loginOK() {
+    return ((this.usernameControl.value === 'Tuna') &&
+            (this.passwordControl.value === 'Fish'));
+  }
+
   onSubmit() {
     // console.log(this.loginFormGroup.value);                   // the FormGroup
     // alert(this.loginFormGroup.get("usernameInput").value);    // the control
+    // alert(this.usernameControl.value + '\n' + this.passwordControl.value);
 
-    alert(this.usernameControl.value + '\n' + this.passwordControl.value);
+    if (this.loginOK()) {
+      console.log('Success');
+    } else {
+      console.log('Error');
+    }
   }
 
 }
