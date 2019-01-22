@@ -36,15 +36,15 @@ export class LoginComponent implements OnInit {
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
-    //this.usernameControl.setValue('andy');    
-    //this.passwordControl.setValue('1234');    
+    // this.usernameControl.setValue('andy');
+    // this.passwordControl.setValue('1234');
   }
 
   onSubmit() {
-    //console.log(this.loginFormGroup.value);                   // the FormGroup
-    //alert(this.loginFormGroup.get("usernameInput").value);    // the control
+    // console.log(this.loginFormGroup.value);                   // the FormGroup
+    // alert(this.loginFormGroup.get("usernameInput").value);    // the control
 
-    alert(this.usernameControl.value + "\n" + this.passwordControl.value);
-  }  
+    alert(this.usernameControl.value + '\n' + this.passwordControl.value);
+  }
 
 }
