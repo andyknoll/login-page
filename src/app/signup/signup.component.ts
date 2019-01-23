@@ -15,7 +15,7 @@ export class SignupComponent {
   // FormBuilder technique
   signupForm = this.fb.group({
     usernameInput: ['',  Validators.required],
-    emailInput:    ['',  Validators.required],
+    emailInput:    ['',  Validators.email],
     passwordInput: ['', [Validators.required, Validators.minLength(4)]]   // both as second arg
   });
 

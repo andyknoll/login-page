@@ -7,16 +7,10 @@ html {
     font-size: 20px;
 }
 
-.input-a {
-    display: block;
-    width: 60%;
-    font-size: 1em;
-    margin-left: 20%;
+.center {
+    text-align: center;
 }
 
-.button-a {
-    width: 60%;
-    padding: 10px 0;
-    font-size: 1em;
-    margin: 20% 20%;
+.margin-10 {
+    margin: 0% 10%;
 }
