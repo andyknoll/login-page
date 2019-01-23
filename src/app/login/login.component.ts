@@ -1,5 +1,4 @@
 // login.component.ts
-//
 // demonstrating Angular Forms, FormControls
 // also FormBuilder and Validators
 
@@ -40,17 +39,13 @@ export class LoginComponent implements OnInit {
     // this.passwordControl.setValue('1234');
   }
 
-  loginOK() {
+  isLoginOK() {
     return ((this.usernameControl.value === 'Tuna') &&
             (this.passwordControl.value === 'Fish'));
   }
 
   onSubmit() {
-    // console.log(this.loginFormGroup.value);                   // the FormGroup
-    // alert(this.loginFormGroup.get("usernameInput").value);    // the control
-    // alert(this.usernameControl.value + '\n' + this.passwordControl.value);
-
-    if (this.loginOK()) {
+    if (this.isLoginOK()) {
       console.log('Success');
     } else {
       console.log('Error');

@@ -10,12 +10,18 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LogoComponent } from './logo/logo.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ForgotPwComponent } from './forgot-pw/forgot-pw.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LogoComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent,
+    DashboardComponent,
+    ForgotPwComponent
   ],
   imports: [
     BrowserModule,
