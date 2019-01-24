@@ -23,7 +23,8 @@ export class SignupComponent {
   constructor(private fb: FormBuilder) { }
 
   onSignup() {
-
+    //alert("ROUTING TO DASHBOARD");
+    //this.router.navigateByUrl("/dashboard");
   }
 
 }

@@ -12,8 +12,16 @@
     <input matInput type="password" placeholder="Password" formControlName="passwordInput" required><br>
   </mat-form-field>
 
-  <button class="button-a" mat-raised-button type="submit" [disabled]="!signupForm.valid">Sign Up</button>
-  <button class="button-a" mat-raised-button>Login</button>
+  <button class="button-a" mat-raised-button type="submit" 
+          [disabled]="!signupForm.valid">Sign Up
+  </button>
+
+  <!--<button class="button-a" mat-raised-button>Login</button>-->
+  <p class="center">
+    Already a member? <a routerLink="/login"  routerLinkActive="active">Login Here</a>
+  </p>
+
+  
 
 </form>
 

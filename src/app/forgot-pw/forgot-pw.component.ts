@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-forgot-pw',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForgotPwComponent implements OnInit {
 
-  constructor() { }
+  // FormBuilder technique
+  resetPWFormGroup = this.fb.group({
+    emailInput: ['',  Validators.email]
+  });
 
-  ngOnInit() {
+  // inject FormBuilder into constructor
+  constructor(private fb: FormBuilder) { }
+
+  ngOnInit() {}
+
+  onSubmit() {
+    console.log('Email has been sent');
+    alert('Email has been sent');
   }
+
 
 }

@@ -8,7 +8,14 @@
     <input matInput type="password" placeholder="Password" formControlName="passwordInput" required><br>
   </mat-form-field>
 
-  <button class="button-a" mat-raised-button type="submit" [disabled]="!loginFormGroup.valid">Login</button>
+  <button class="button-a" mat-raised-button type="submit" 
+          routerLink="/dashboard"  routerLinkActive="active"
+          [disabled]="!loginFormGroup.valid">Login
+  </button>
+
+  <p class="center">
+    Forgot password? <a routerLink="/forgot-pw"  routerLinkActive="active">Click here to reset.</a>
+  </p>
 
 </form>
 

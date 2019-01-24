@@ -15,14 +15,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ForgotPwComponent } from './forgot-pw/forgot-pw.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LogoComponent,
-    LoginComponent,
-    SignupComponent,
-    DashboardComponent,
-    ForgotPwComponent
-  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -30,6 +22,15 @@ import { ForgotPwComponent } from './forgot-pw/forgot-pw.component';
     MatButtonModule,
     BrowserAnimationsModule,
     ReactiveFormsModule
+  ],
+  exports: [],
+  declarations: [
+    AppComponent,
+    LogoComponent,
+    LoginComponent,
+    SignupComponent,
+    DashboardComponent,
+    ForgotPwComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
