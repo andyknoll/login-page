@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forgot-pw',
@@ -14,13 +15,14 @@ export class ForgotPwComponent implements OnInit {
   });
 
   // inject FormBuilder into constructor
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private router: Router) { }
 
   ngOnInit() {}
 
   onSubmit() {
     console.log('Email has been sent');
     alert('Email has been sent');
+    this.router.navigate(['/login']);
   }
 
 

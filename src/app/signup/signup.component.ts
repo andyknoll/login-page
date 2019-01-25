@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -7,6 +8,9 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent {
+
+  // inject FormBuilder into constructor
+  constructor(private fb: FormBuilder, private router: Router) { }
 
   get usernameControl() { return this.signupForm.get('usernameInput'); }
   get emailControl() { return this.signupForm.get('emailInput'); }
@@ -19,12 +23,9 @@ export class SignupComponent {
     passwordInput: ['', [Validators.required, Validators.minLength(4)]]   // both as second arg
   });
 
-  // inject FormBuilder into constructor
-  constructor(private fb: FormBuilder) { }
-
   onSignup() {
-    //alert("ROUTING TO DASHBOARD");
-    //this.router.navigateByUrl("/dashboard");
+    // alert("ROUTING TO DASHBOARD");
+    this.router.navigate(['/dashboard']);
   }
 
 }
